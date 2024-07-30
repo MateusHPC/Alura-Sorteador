@@ -4,6 +4,8 @@ let maximum;
 let minimum;
 let times;
 let result;
+let id;
+let inputC;
 
 
 function roll(maximum, minimum){ //essa foi a função que eu escrevi sem conhecer o Math.float, só fazendo testes e tendo problemas com a tipagem, mas consegui e funciona. 
@@ -32,13 +34,15 @@ function sortear(){
     }
 }
 
+function clean(id){
+    inputC = document.getElementById(id);
+    inputC.value = '';
+}
+
 function reiniciar(){
-    times = document.getElementById('quantidade');
-    times.value = '';
-    minimum = document.getElementById('de');
-    minimum.value = '';
-    maximum = document.getElementById('ate');
-    maximum.value = '';
+    clean('quantidade');
+    clean('ate');
+    clean('de');
     result = document.getElementById('resultado');
     result.innerHTML = `<label class="texto__paragrafo">Números sorteados: nenhum até agora</label>`;
     listOfTheDrawings = [];
