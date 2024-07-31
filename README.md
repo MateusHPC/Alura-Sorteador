@@ -28,6 +28,6 @@ ressaltando que o escopo é determinado a partir de um número  mínimo e um má
 
 ## 🛠️ Abrir e rodar o projeto
 
-**Após ter as pastas do projeto em seu computador, basta abrir o arquivo index com o navegador.**
+**Basta abrir o arquivo index com o navegador.**
 
 
